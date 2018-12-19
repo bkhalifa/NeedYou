@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NY.Models
 {
-    public class Adsresse
+    public class Adress
     {
         public long Id { get; set; }
     }
