@@ -2,7 +2,7 @@
 
 namespace NY.Models
 {
-   public class Need
+  public  class Person
     {
         public long Id { get; set; }
     }
