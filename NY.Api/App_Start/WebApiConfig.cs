@@ -9,9 +9,9 @@ namespace NY.Api
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
+            // Configuration et services API Web
 
-            // Web API routes
+            // Itinéraires de l'API Web
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
