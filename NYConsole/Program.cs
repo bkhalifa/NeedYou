@@ -20,7 +20,7 @@ namespace NYConsole
                 LastName = "Ben Khalifa"
 
             };
-            using (var db = new DepotContext())
+            using (var db = new NYDBContext())
             {
                 var p = db.Persons.ToList();
 

@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -11,13 +9,12 @@ namespace NY.Models
     {
         [Key]
         public long Id { get; set; }
-       
         public string Name { get; set; }
-     
         public string LastName { get; set; }
-        public System.DateTime DateOfBirth { get; set; }
-     
+        public DateTime DateOfBirth { get; set; }
         public string Email { get; set; }
+        public Guid GuidUser { get; set; }
+        public string PhoneNumber { get; set; }
         [NotMapped]
         public int Age => CalculateAge(this.DateOfBirth);
 
@@ -31,9 +28,6 @@ namespace NY.Models
                 return string.Concat(this.Name + " " + this.LastName);
             }
         }
-
-    
-
         [NotMapped]
         private static Func<DateTime, int> CalculateAge = 
             (dateOfBirth)

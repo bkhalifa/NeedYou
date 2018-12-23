@@ -4,7 +4,7 @@ using NY.Models;
 
 namespace NY.DAL
 {
-    public class DepotContext: DbContext
+    public class NYDBContext: DbContext
     {
         public DbSet<Person> Persons { get; set; }
 
@@ -12,9 +12,9 @@ namespace NY.DAL
 
 
 
-        public DepotContext() :base("NeedYouDbContext")
+        public NYDBContext(): base("NeedYouDB")
         {
-            
+          
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
