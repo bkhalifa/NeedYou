@@ -49,19 +49,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBContext\DepotContext.cs" />
-    <Compile Include="Migrations\201812202126524_InitialCreatePersonDB.cs" />
-    <Compile Include="Migrations\201812202126524_InitialCreatePersonDB.Designer.cs">
-      <DependentUpon>201812202126524_InitialCreatePersonDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812202139383_addpersons.cs" />
-    <Compile Include="Migrations\201812202139383_addpersons.Designer.cs">
-      <DependentUpon>201812202139383_addpersons.cs</DependentUpon>
+    <Compile Include="Migrations\201901261912045_init.cs" />
+    <Compile Include="Migrations\201901261912045_init.Designer.cs">
+      <DependentUpon>201901261912045_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -71,11 +69,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812202126524_InitialCreatePersonDB.resx">
-      <DependentUpon>201812202126524_InitialCreatePersonDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812202139383_addpersons.resx">
-      <DependentUpon>201812202139383_addpersons.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201901261912045_init.resx">
+      <DependentUpon>201901261912045_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,7 +3,7 @@ namespace NY.DAL.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreatePersonDB : DbMigration
+    public partial class init : DbMigration
     {
         public override void Up()
         {
