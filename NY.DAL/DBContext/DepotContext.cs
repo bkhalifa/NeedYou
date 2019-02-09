@@ -18,7 +18,7 @@ namespace NY.DAL
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Properties<int>()
+            modelBuilder.Properties<long>()
                 .Where(x => x.Name == "Key")
                 .Configure(x => x.IsKey().HasColumnOrder(1));
 
